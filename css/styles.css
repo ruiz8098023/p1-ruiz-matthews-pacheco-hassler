@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Navigation Styling */
+nav {
+    background-color: #BF2028;
+    text-align: right;
+    padding: 30px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+
+/* Header styles of all pages */
+.page_headers {
+    background-color: #FFE400;
+    border: solid black 5px;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.page_headers h1 {
+    background-image: url("/images/pow-shape.png");
+    color: black;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 
+    /* font-family: Montserrat; */
+}
+
+.social_media img {
+    width: 100%;
+    max-width: 60px;
+}
