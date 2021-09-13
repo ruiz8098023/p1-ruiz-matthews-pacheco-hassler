@@ -10,6 +10,7 @@ img {
 
 
 /* Navigation Styling */
+
 nav {
     background-color: #BF2028;
     text-align: right;
@@ -40,8 +41,7 @@ nav ul {
 footer {
     background-color: black;
     color: white;
-    width: 100%;
-    padding: 
+    padding: 100px 60px;
     /* font-family: Montserrat; */
 }
 
