@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    
+    <title>Florida Supercon</title>
+       
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,13 +20,34 @@
 
     <meta name="description" content="">
 
-    <title>Florida Supercon</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
         <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250></a>
 
+        <!-- Mobile Nav -->
+
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+          
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="badges.html">Badges</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Desktop Nav -->
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
@@ -49,21 +71,46 @@
         <section>
             <h2>Special Guests</h2>
 
-            <img src="images/simu-liu.jpeg" alt="">
+            <!-- Special Guests Cards -->
+            <figure>
+                <img src="images/simu-liu.jpeg" alt="Photo of Simu Liu" title="Simu Liu">
+                <figcaption>Simu Liu</figcaption>
+            </figure>
 
-            <img src="images/jodie-whittaker5.jpeg" alt="">
+            <figure>
+                <img src="images/jodie-whittaker5.jpeg" alt="Photo of Jode Whitaker" title="Jodie Whitaker">
+                <figcaption>Jodie Whitaker</figcaption>
+            </figure>
 
-            <img src="images/brian-tyree-henry2.jpeg" alt="">
+            <figure>
+                <img src="images/brian-tyree-henry2.jpeg" alt="Photo of Brian Tyree Henry" title="Brian Tyree Henry">
+                <figcaption>Brian Tyree Henry</figcaption>
+            </figure>
 
-            <img src="images/tatiana-maslaney3.jpeg" alt="">
+            <figure>
+                <img src="images/tatiana-maslaney3.jpeg" alt="Photo of Tatiana Maslaney" title="Tatiana Maslaney">
+                <figcaption>Tatiana Maslaney</figcaption>
+            </figure>
 
-            <img src="images/nkjemisin2.jpeg" alt="">
+            <figure>
+                <img src="images/nkjemisin2.jpeg" alt="Photo of N.K. Jemisin" title="N.K. Jemisin">
+                <figcaption>N.K. Jemisin</figcaption>
+            </figure>
 
-            <img src="images/justin-briner.jpeg" alt="">
+            <figure>
+                <img src="images/justin-briner.jpeg" alt="Photo of Justin Briner" title="Justin Briner">
+                <figcaption>Justin Briner</figcaption>
+            </figure>
 
-            <img src="images/mokoto-shinkai.jpeg" alt="">
+            <figure>
+                <img src="images/mokoto-shinkai.jpeg" alt="Photo of Makoto Shinkai" title="Makoto Shinkai">
+                <figcaption>Makoto Shinkai</figcaption>
+            </figure>
 
-            <img src="images/chloe-zhao.jpeg" alt="">
+            <figure>
+                <img src="images/chloe-zhao.jpeg" alt="Photo of Chloé Zhao" title="Chloé Zhao">
+                <figcaption>Chloé Zhao</figcaption>
+            </figure>
         </section>
     </main>
 
@@ -92,6 +139,9 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    
     <!-- Less -->
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     
