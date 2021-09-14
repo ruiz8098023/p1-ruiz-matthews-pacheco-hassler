@@ -25,9 +25,21 @@ body {
         #heading();
     }
 
+    h2 {
+      #heading-background();
+    }
+
     img {
         max-width: 100%;
     }
+
+    button, button a {
+      #button();
+    }
+
+    // .red-border {
+    //   #red-border();
+    // }
 }
 
 header {
@@ -35,7 +47,7 @@ header {
     border-bottom: 3px solid black;
 }
 
-.desktop-nav, h1 {
+h1, .desktop-nav, .banner-heading {
     display: none;
 }
 
@@ -182,8 +194,36 @@ header {
   }
   // End Hamburger Menu // 
 
+ //////////////////// ABOUT PAGE ////////////////////
+//  .feature-card {
+//    #feature-card();
+//  }
+
+ .feature-card-text {
+   #feature-card-text();
+ }
+
+ //////////////////// FOOTER ////////////////////
+
   footer {
       background-color: @font-background-color;
+
+      p {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .blue {
+        color: @primary-blue;
+      }
+
+      .red {
+        color: @primary-red;
+      }
+
+      .yellow {
+        color: @primary-yellow;
+      }
   }
   
   // Hamburger Menu Animation
