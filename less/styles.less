@@ -1,16 +1,46 @@
-// Reset
+@import "./variables.less";
+@import "./mixins.less";
+
+// Reset Rule
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+// Global Styles
+body {
+    color: @font-background-color;
+    font-family: @body-font;
+
+    h1, h2, h3 {
+        #heading();
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+header {
+    background-color: @primary-red;
+    border-bottom: 3px solid black;
+}
+
+.desktop-nav, h1 {
+    display: none;
+}
 
 
-
-
-
-// Hamburger Menu 
+// Hamburger Menu // 
 .button_container {
     position: fixed;
     top: 5%;
@@ -42,8 +72,8 @@
     }
     
     span {
-    background: #FF5252;
-    border: none;
+    background: #fff;
+    border: 1px solid black;
     height: 5px;
     width: 100%;
     position: absolute;
@@ -64,7 +94,7 @@
   
   .overlay {
     position: fixed;
-    background: #FF5252;
+    background: @primary-blue;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,7 +131,7 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: 50px;
-      font-family: 'Vollkorn', serif;
+      font-family: @comic-font;
       font-weight: 400;
       text-align: center;
     }
@@ -149,6 +179,11 @@
         }
       }
     }
+  }
+  // End Hamburger Menu // 
+
+  footer {
+      background-color: @font-background-color;
   }
   
   // Hamburger Menu Animation
