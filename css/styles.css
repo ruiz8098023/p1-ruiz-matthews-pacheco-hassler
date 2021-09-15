@@ -46,7 +46,7 @@ nav ul li {
 }
 
 .page_headers h1 {
-    background-image: url("/images/pow-shape.png");
+    background-image: url("../images/pow-shape.png");
     /* color: black; */
 }
 
