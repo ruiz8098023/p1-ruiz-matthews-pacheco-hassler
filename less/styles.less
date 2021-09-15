@@ -2,9 +2,22 @@
 @import "./mixins.less";
 
 * {
-    #reset(); 
+    #reset();
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
+}
+
+.badges h5 {
+    font-family: @heading-font-family;
+    font-size: @card-title-font-size;
+}
+
+.badges h6 {
+    font-size: @card-subtitle-font-size;
+}
+
+.badges p {
+    font-size: @card-text-size;
 }
