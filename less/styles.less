@@ -37,12 +37,20 @@ body {
       #button();
     }
 
+    hr {
+      border: 0;
+      border-top: 2px solid #fff;
+      margin: 0px 30px;
+      padding: 16px;
+    }
+
     
 }
 
 header {
     background-color: @primary-red;
     border-bottom: 3px solid black;
+    padding: 10px;
 }
 
 h1, .desktop-nav, .banner-heading {
@@ -193,6 +201,10 @@ h1, .desktop-nav, .banner-heading {
   // End Hamburger Menu // 
 
   //////////////////// HOME PAGE ////////////////////
+  figure img {
+    border: 3px solid black;
+  }
+  
   figcaption {
     #figcaptions();
 
@@ -202,10 +214,6 @@ h1, .desktop-nav, .banner-heading {
   }
 
  //////////////////// ABOUT PAGE ////////////////////
-//  .feature-card {
-//    #feature-card();
-//  }
-
  .feature-card-text {
    #feature-card-text();
  }
@@ -214,6 +222,11 @@ h1, .desktop-nav, .banner-heading {
 
   footer {
       background-color: @font-background-color;
+
+      // .social-media {
+      //   display: flex;
+      //   justify-content: center;
+      // }
 
       a {
         color: #fff;
