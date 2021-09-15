@@ -9,6 +9,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .badges h5 {
     font-family: @heading-font-family;
     font-size: @card-title-font-size;
@@ -31,14 +35,14 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 .badges .card {
-    border-top: black solid 5px;
-    border-bottom: black solid 5px;
-    border-left: black solid 5px;
-    border-right: black solid 5px;
+    border-top: @border;
+    border-bottom: @border;
+    border-left: @border;
+    border-right: @border;
     padding: 0;
     width: 100%;
     max-width: 25rem;
-    height: 550px;
+    height: 600px;
     margin: 0 auto;
 }
 
@@ -50,3 +54,31 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     width: 100%;
 }
 
+.badges-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: @button-background-color;
+    height: 70px;
+    border-top: @border;
+    border-bottom: @border;
+    border-left: @border;
+    border-right: @border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badges-button:hover {
+    background-color: @button-background-color-hover;
+}
+
+.badges-button a {
+    color: @button-text-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.badges-button a:hover {
+    color: @button-text-color;
+    text-decoration: none;
+}
