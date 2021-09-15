@@ -13,6 +13,23 @@ body {
     font-family: @body-font-family;
 }
 
+header {
+    .header-style();
+}
+
+nav {
+    text-align: right;  
+    width: 70%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
 .badges {
     .container{
         .row {
@@ -23,7 +40,7 @@ body {
                 .card {
                     .card-styling();
                     img {
-                        width: 100%;
+                        width: @images;
                     }
                     .card-body {
                         display: flex;
@@ -46,4 +63,8 @@ body {
             }
         }
     }
+}
+
+.middle-yellow-div {
+    background-color: #FFE400;
 }
