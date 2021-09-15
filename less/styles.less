@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: @body-font-family;
 }
 
 .badges h5 {
@@ -22,11 +22,14 @@ body {
 .badges h6 {
     font-size: @card-subtitle-font-size;
     padding-bottom: 10px;
+    font-family: @body-font-family;
+    font-weight: 500;
 }
 
 .badges p {
     font-size: @card-text-size;
     padding-bottom: 5px;
+    font-family: @body-font-family;
 }
 
 .row {
@@ -42,9 +45,10 @@ body {
     padding: 0;
     width: 100%;
     max-width: 25rem;
-    height: 600px;
+    height: 615px;
     margin: 0 auto;
     border-radius: 0;
+    background-color: #ebebeb;
 }
 
 .card-container {
