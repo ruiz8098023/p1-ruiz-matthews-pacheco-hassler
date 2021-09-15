@@ -6,88 +6,44 @@
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+    display: block;
 }
 
 body {
     font-family: @body-font-family;
 }
 
-.badges h5 {
-    font-family: @heading-font-family;
-    font-size: @card-title-font-size;
-    padding-bottom: 5px;
-}
-
-.badges h6 {
-    font-size: @card-subtitle-font-size;
-    padding-bottom: 10px;
-    font-family: @body-font-family;
-    font-weight: 500;
-}
-
-.badges p {
-    font-size: @card-text-size;
-    padding-bottom: 5px;
-    font-family: @body-font-family;
-}
-
-.row {
-    padding: 0 5%;
-    max-width: 1000px;
-}
-
-.badges .card {
-    border-top: @border;
-    border-bottom: @border;
-    border-left: @border;
-    border-right: @border;
-    padding: 0;
-    width: 100%;
-    max-width: 25rem;
-    height: 615px;
-    margin: 0 auto;
-    border-radius: 0;
-    background-color: #ebebeb;
-}
-
-.card-container {
-    padding: 20px 3%;
-}
-
-.badges .card img {
-    width: 100%;
-}
-
-.badges-button {
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: @button-background-color;
-    height: 65px;
-    width: 210px;
-    margin: 30px auto 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.badges-button:hover {
-    background-color: @button-background-color-hover;
-}
-
-.badges-button a {
-    color: @button-text-color;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.badges-button a:hover {
-    color: @button-text-color;
-    text-decoration: none;
-}
-
-.badges .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.badges {
+    .container{
+        .row {
+            padding: 0 5%;
+            max-width: 1000px;
+            .card-container {
+                padding: 20px 3%;
+                .card {
+                    .card-styling();
+                    img {
+                        width: 100%;
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h5 {
+                            .card-heading();
+                        }
+                        h6 {
+                            .card-subheading();
+                        }
+                        p {
+                            .card-body-text();
+                        }
+                        .badges-button {
+                            .button();
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
