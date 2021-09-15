@@ -2,9 +2,48 @@
 @import "./mixins.less";
 
 * {
-    #reset(); 
+    #reset();
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+    display: block;
+}
+
+body {
+    font-family: @body-font-family;
+}
+
+.badges {
+    .container{
+        .row {
+            padding: 0 5%;
+            max-width: 1000px;
+            .card-container {
+                padding: 20px 3%;
+                .card {
+                    .card-styling();
+                    img {
+                        width: 100%;
+                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h5 {
+                            .card-heading();
+                        }
+                        h6 {
+                            .card-subheading();
+                        }
+                        p {
+                            .card-body-text();
+                        }
+                        .badges-button {
+                            .button();
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
