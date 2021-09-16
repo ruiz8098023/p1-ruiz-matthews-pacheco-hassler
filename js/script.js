@@ -5,14 +5,3 @@ $('#toggle').click(function() {
     $('#overlay').toggleClass('open');
    });
 
-
-// Bx Slider: https://bxslider.com/
-
-$(document).ready(function(){
-    $('.bxslider').bxSlider();
-    touchEnabled: true;
-    auto: true;
-    stopAutoOnClick: true;
-    pause: 3000;
-  });
- 
