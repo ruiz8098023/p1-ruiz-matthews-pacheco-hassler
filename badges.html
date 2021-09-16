@@ -1,28 +1,56 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <!-- Adobe Fonts -->
+        <title>Florida Supercon</title>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- LESS CSS -->
+        <link rel="stylesheet/less" type="text/css" href="./less/styles.less" />
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+        <!-- Fonts -->
         <link rel="stylesheet" href="https://use.typekit.net/oty1zax.css">
-
-        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <!-- LESS -->
-        <link rel="stylesheet/less" type="text/css" href="./less/styles.less">
-        <sscript src="/less.js" type="text/javascript"></script>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <title>Florida Supercon</title>
-        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+        <meta name="description" content="">
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/4308417424.js" crossorigin="anonymous"></script>
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
         <header>
-            <nav>
+            <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=200></a>
+    
+            <!-- Mobile Nav -->
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+    
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="badges.html">Badges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="badges.html">Badges</a></li>
@@ -30,13 +58,13 @@
                     <li><a href="merch.html">Merch</a></li>
                 </ul>
             </nav>
-        </header>
+        </header>    
 
         <main class="badges">
             <section class="badges-top-section">
                 <div class="left-blue-div"></div>
                 <div class="middle-yellow-div">
-                    <h1>Premium Packages</h1>
+                    <h2>Premium Packages</h2>
                 </div>
                 <div class="right-blue-div"></div>
                 <div class="red-div"></div>
@@ -53,8 +81,9 @@
                                         </p>
                                     </div>
                                     
-
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">
+                                        Buy Badges</a>
+                                    </button>
 
                                 </div>
                             </div>
@@ -70,8 +99,8 @@
                                         <p class="card-text">This badge is valid for one (1) person on Friday, Saturday and Sunday during Florida Supercon 2021 with Private Celebrity Premium Lounge Access.
                                         </p>
                                     </div>
-                                  
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +116,7 @@
                                         </p>
                                     </div>
                                   
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                               </div>
                         </div>
@@ -101,10 +130,11 @@
             <section class="badges-bottom-section">
                 <div class="left-blue-div"></div>
                 <div class="middle-yellow-div">
-                    <h1>General Admission</h1>
+                    <h2>General Admission</h2>
                 </div>
                 <div class="right-blue-div"></div>
                 <div class="red-div"></div>
+
                 <div class="container">
                     <div class="row">
                         <div class="card-container align-self-center col-md-6 col-lg-4">
@@ -118,7 +148,7 @@
                                         </p>
                                     </div>
                                 
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +164,7 @@
                                         </p>
                                     </div>
                                   
-                                  <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +180,7 @@
                                         </p>
                                     </div>
                                   
-                                  <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +196,7 @@
                                         </p>
                                     </div>
                                   
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +212,7 @@
                                         </p>
                                     </div>
                                   
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</a></button>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +227,7 @@
                                         </p>
                                     </div>
                                   
-                                    <div class="badges-button"><a href="#">Buy Badges</a></div>
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
                                 </div>
                             </div>
                         </div>
@@ -213,14 +243,60 @@
         </main>
 
         <footer>
-            <h3>Stay Connected</h3>
+            <div class="centering-container">
+                <div class="footer-flex-container">
+                    <!-- Facebook -->
+                    <div class="social-media">                   
+                        <a href="https://www.facebook.com/floridasupercon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <p class="blue">Join our community</p>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="social-media">                   
+                        <a href="https://www.instagram.com/floridasupercon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <p class="red">Tag us in your photos</p>
+                    </div>
+
+                    <!-- Twitter -->
+                    <div class="social-media">
+                        <a href="https://twitter.com/FloridaSupercon" target="_blank"><i class="fab fa-twitter-square"></i></a>  
+                        <p class="yellow">Talk geeky with us</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="white-line"></div>
+            <div class="centering-container">
+                <div>
+                    <img src="images/small-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250>
+                    <div class="address">
+                        <p >1901 Convention Center Dr</p>
+                        <p >Miami Beach, FL 33139</p>
+                    </div>
+    
+                    <p class="footer-text">(954) 399-1330</p>
+    
+                    <p class="footer-text">inquiry.flsupercon@reedpop.com</p>
+    
+                    <p class="footer-text">Copyright 2021.</p>
+                </div>
+            </div>
+            
         </footer>
-        <!-- less compiler -->
-        <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+    
+        <!-- Less -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
         <!-- Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     </body>
 </html>

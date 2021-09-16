@@ -42,22 +42,7 @@
     padding: 20px;
 }
 
-
-
-#reset {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-.header-style {
-    background-color: #BF2028;
-    padding: 30px 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row; 
-}
-
+// Cards
 .card-styling {
     border-top: @border;
     border-bottom: @border;
@@ -69,11 +54,11 @@
     height: 615px;
     margin: 0 auto;
     border-radius: 0;
-    background-color: #ebebeb;
+    background-color: @background-grey;
 }
 
 .card-heading {
-    font-family: @heading-font-family;
+    font-family: @comic-font;
     font-size: @card-title-font-size;
     padding-bottom: 5px;
 }
@@ -81,36 +66,23 @@
 .card-subheading {
     font-size: @card-subtitle-font-size;
     padding-bottom: 10px;
-    font-family: @body-font-family;
+    font-family: @body-font;
     font-weight: 500;
 }
 
 .card-body-text {
     font-size: @card-text-size;
     padding-bottom: 5px;
-    font-family: @body-font-family;
+    font-family: @body-font;
 }
 
-.button {
+.card-button {
     text-transform: uppercase;
     font-weight: 700;
-    background-color: @button-background-color;
-    height: 65px;
-    width: 210px;
+    background-color: @primary-red;
+    padding: 15px 30px;
     margin: 30px auto 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-        color: @button-text-color;
-        text-decoration: none;
-        font-size: 1.2rem;
-    }
-    a:hover {
-        color: @button-text-color;
-        text-decoration: none;
-    }
-    .badges-button:hover {
-        background-color: @button-background-color-hover;
-    }
+    border-radius: 0;
+    color: @primary-white;
+    font-size: 1.2rem;
 }

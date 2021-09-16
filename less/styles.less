@@ -8,6 +8,10 @@
     border: 0;
 }
 
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -39,7 +43,7 @@ body {
 
     hr {
       border: 0;
-      border-top: 2px solid #fff;
+      border-top: 2px solid @primary-white;
       margin: 0px 30px;
       padding: 16px;
     }
@@ -49,7 +53,7 @@ body {
 
 header {
     background-color: @primary-red;
-    border-bottom: 3px solid black;
+    border-bottom: @border;
     padding: 10px;
 }
 
@@ -76,22 +80,22 @@ h1, .desktop-nav, .banner-heading {
     &.active {
       .top {
         transform: translateY(11px) translateX(0) rotate(45deg);
-        background: #fff;
+        background: @primary-white;
       }
       .middle {
         opacity: 0;
-        background: #fff;
+        background: @primary-white;
       }
       
       .bottom {
         transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: #fff;
+        background: @primary-white;
       }
     }
     
     span {
-    background: #fff;
-    border: 1px solid black;
+    background: @primary-white;
+    border: 1px solid @font-background-color;
     height: 5px;
     width: 100%;
     position: absolute;
@@ -173,7 +177,7 @@ h1, .desktop-nav, .banner-heading {
         a {
           display: block;
           position: relative;
-          color: #fff;
+          color: @primary-white;
           text-decoration: none;
           overflow: hidden;
           
@@ -191,7 +195,7 @@ h1, .desktop-nav, .banner-heading {
             width: 0%;
             transform: translateX(-50%);
             height: 3px;
-            background: #fff;
+            background: @primary-white;
             transition: .35s;
           }
         }
@@ -202,7 +206,7 @@ h1, .desktop-nav, .banner-heading {
 
   //////////////////// HOME PAGE ////////////////////
   figure img {
-    border: 3px solid black;
+    border: @border;
   }
   
   figcaption {
@@ -220,37 +224,76 @@ h1, .desktop-nav, .banner-heading {
 
  //////////////////// FOOTER ////////////////////
 
-  footer {
+footer {
       background-color: @font-background-color;
 
-      // .social-media {
-      //   display: flex;
-      //   justify-content: center;
-      // }
+    .centering-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+    }
 
-      a {
-        color: #fff;
+    .footer-flex-container {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        color: @primary-white;
         font-size: 50px;
-      }
+    }
 
-      p {
-        color: #fff;
+    p {
+        color: @primary-white;
         font-weight: bold;
-      }
+        margin: 0;
+    }
 
-      .blue {
+    img {
+        width: 60%;
+    }
+
+    .blue {
         color: @primary-blue;
-      }
+        padding-left: 20px;
+    }
 
-      .red {
+    .red {
         color: @primary-red;
-      }
+        padding-left: 20px;
+    }
 
-      .yellow {
+    .yellow {
         color: @primary-yellow;
-      }
-      
-  }
+        padding-left: 20px;
+    }
+    
+    
+    .white-line {
+        width: 275px;
+        margin: auto;
+        border-bottom: 3px solid @primary-white;
+    }
+    
+    .address {
+        padding: 10px 0;
+    }
+
+    .footer-text {
+        padding: 10px 0;
+    }
+
+    padding: 0 10px 20px;
+
+}
   
   // Hamburger Menu Animation
   @keyframes fadeInRight {
@@ -263,40 +306,12 @@ h1, .desktop-nav, .banner-heading {
       left: 0;
     }
   }
-* {
-    #reset();
-}
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display: block;
-}
-
-body {
-    font-family: @body-font-family;
-}
-
-header {
-    .header-style();
-}
-
-nav {
-    text-align: right;  
-    width: 70%;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
+// Badges Page
 .badges {
     .container{
         .row {
-            padding: 0 5%;
-            max-width: 1000px;
+            padding: 0 10px;
             .card-container {
                 padding: 20px 3%;
                 .card {
@@ -318,7 +333,10 @@ nav ul li {
                             .card-body-text();
                         }
                         .badges-button {
-                            .button();
+                            .card-button();
+                        }
+                        .badges-button:hover {
+                            background-color: @button-background-color-hover;
                         }
                     }
                 }
@@ -326,7 +344,40 @@ nav ul li {
         }
     }
 }
+ //////////////////// Contact PAGE ////////////////////
+ body{
+  header{
+      font-family: 'classic-comic', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      nav{
+          ul{
+            li{
+              a{
+                display: inline;
+              }
+            }
+          }
+      }
 
-.middle-yellow-div {
-    background-color: #FFE400;
+  }
+  .container-fluid{
+     
+      .container{
+          h2{
+              font-family: 'classic-comic', sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 30px;
+          }
+          
+             
+          .form-label{
+              font-family: 'classic-comic', sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 16px;
+          }
+      }
+  }
 }
