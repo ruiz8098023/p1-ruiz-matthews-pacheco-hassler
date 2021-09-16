@@ -55,6 +55,7 @@ header {
     background-color: @primary-red;
     border-bottom: @border;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 h1, .desktop-nav, .banner-heading {
@@ -130,6 +131,7 @@ h1, .desktop-nav, .banner-heading {
       opacity: .9;
       visibility: visible;
       height: 100%;
+      z-index: 1;
       
       li {
         animation: fadeInRight .5s ease forwards;
@@ -205,6 +207,11 @@ h1, .desktop-nav, .banner-heading {
   // End Hamburger Menu // 
 
   //////////////////// HOME PAGE ////////////////////
+  .carousel-inner img {
+    border-top: @border;
+    border-bottom: @border;
+  }
+
   figure img {
     border: @border;
   }
@@ -218,6 +225,10 @@ h1, .desktop-nav, .banner-heading {
   }
 
  //////////////////// ABOUT PAGE ////////////////////
+ .card {
+   border: @border;
+ }
+
  .feature-card-text {
    #feature-card-text();
  }
