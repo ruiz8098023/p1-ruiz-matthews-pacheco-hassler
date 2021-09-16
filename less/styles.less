@@ -8,6 +8,10 @@
     border: 0;
 }
 
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -39,7 +43,7 @@ body {
 
     hr {
       border: 0;
-      border-top: 2px solid #fff;
+      border-top: 2px solid @primary-white;
       margin: 0px 30px;
       padding: 16px;
     }
@@ -49,7 +53,7 @@ body {
 
 header {
     background-color: @primary-red;
-    border-bottom: 3px solid black;
+    border-bottom: @border;
     padding: 10px;
 }
 
@@ -76,22 +80,22 @@ h1, .desktop-nav, .banner-heading {
     &.active {
       .top {
         transform: translateY(11px) translateX(0) rotate(45deg);
-        background: #fff;
+        background: @primary-white;
       }
       .middle {
         opacity: 0;
-        background: #fff;
+        background: @primary-white;
       }
       
       .bottom {
         transform: translateY(-11px) translateX(0) rotate(-45deg);
-        background: #fff;
+        background: @primary-white;
       }
     }
     
     span {
-    background: #fff;
-    border: 1px solid black;
+    background: @primary-white;
+    border: 1px solid @font-background-color;
     height: 5px;
     width: 100%;
     position: absolute;
@@ -173,7 +177,7 @@ h1, .desktop-nav, .banner-heading {
         a {
           display: block;
           position: relative;
-          color: #fff;
+          color: @primary-white;
           text-decoration: none;
           overflow: hidden;
           
@@ -191,7 +195,7 @@ h1, .desktop-nav, .banner-heading {
             width: 0%;
             transform: translateX(-50%);
             height: 3px;
-            background: #fff;
+            background: @primary-white;
             transition: .35s;
           }
         }
@@ -202,7 +206,7 @@ h1, .desktop-nav, .banner-heading {
 
   //////////////////// HOME PAGE ////////////////////
   figure img {
-    border: 3px solid black;
+    border: @border;
   }
   
   figcaption {
@@ -229,12 +233,12 @@ h1, .desktop-nav, .banner-heading {
       // }
 
       a {
-        color: #fff;
+        color: @primary-white;
         font-size: 50px;
       }
 
       p {
-        color: #fff;
+        color: @primary-white;
         font-weight: bold;
       }
 
@@ -263,23 +267,12 @@ h1, .desktop-nav, .banner-heading {
       left: 0;
     }
   }
-* {
-    #reset();
-}
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display: block;
-}
-
-body {
-    font-family: @body-font-family;
-}
-
+// Badges Page
 .badges {
     .container{
         .row {
             padding: 0 5%;
-            max-width: 1000px;
             .card-container {
                 padding: 20px 3%;
                 .card {
@@ -301,7 +294,7 @@ body {
                             .card-body-text();
                         }
                         .badges-button {
-                            .button();
+                            .card-button();
                         }
                         .badges-button:hover {
                             background-color: @button-background-color-hover;
