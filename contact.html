@@ -3,11 +3,51 @@
     <head>
         <title>Florida Supercon</title>
         <meta charset="utf-8"/>
+        <!-- LESS CSS -->
+    <link rel="stylesheet/less" type="text/css" href="./less/styles.less" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mya1fmm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <meta name="description" content="">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4308417424.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
         <header>
-            <nav>
+            <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=200></a>
+    
+            <!-- Mobile Nav -->
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+    
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="badges.html">Badges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="badges.html">Badges</a></li>
@@ -16,11 +56,101 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <div class="container-fluid">
+                <div class="container">
+                    <div>
+                        <h2 class="text-center mb-5  p-3">Contact Us!</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 border border-4 border border-dark p5">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Peter">
+                                </div>
+                                <div class="col mb-3">
+                                     <label class="form-label">Last Name</label>
+                                     <input type="text" class="form-control" placeholder="Parker">
+                                </div>
+                                <div class="mb-3">
+                                     <label class="form-label">Email:</label>
+                                     <input type="text" class="form-control" placeholder="defnotme@spiderman.com">
+                                 </div>   
+                                 <div class="mb-3">
+                                     <label class="form-label">Subject</label>
+                                     <input type="text" class="form-control" placeholder="Subject">
+                                 </div>
+                                 <div class="mb-3">
+                                     <label class="form-label">Message</label>
+                                     <textarea name="" class="form-control"  rows="3" placeholder="Ask away!"></textarea>
+                                 </div>
+                                 <div class="col mb-3">
+                                     <button class="btn btn-danger">Submit!</button>
+                                </div>       
+                            </div>
+                        </div>
+                        <div class="col-md-5 border border-4 border border-dark">
+                            <div>
+                                <img src="images/gamestop-image.jpg"  alt="contact" class="img-fluid">
+                            </div> 
+                        </div>
+         
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="flex-container">
+                    <!-- Facebook -->
+                    <div class="social-media">                   
+                        <a href="https://www.facebook.com/floridasupercon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <p class="blue">Join our community</p>
+                    </div>
+        
+                    <!-- Instagram -->
+                    <div class="social-media">                   
+                        <a href="https://www.instagram.com/floridasupercon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <p class="red">Tag us in your photos</p>
+                    </div>
+        
+                    <!-- Twitter -->
+                    <div class="social-media">
+                        <a href="https://twitter.com/FloridaSupercon" target="_blank"><i class="fab fa-twitter-square"></i></a>  
+                        <p class="yellow">Talk geeky with us</p>
+                    </div>
+                </div>
+                   
+                <hr>
+        
+                <div>
+                    <img src="images/small-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250>
+                    <p>1901 Convention Center Dr</p>
+                    <p>Miami Beach, FL 33139</p>
+        
+                    <p>(954) 399-1330</p>
+        
+                    <p>inquiry.flsupercon@reedpop.com</p>
+        
+                    <p>Copyright 2021.</p>
+                </div>
+        
+                
+            </footer>
+         </main>
+          <!-- Scripts -->
+    <script src="js/script.js"></script>
 
-        <main></main>
+    
+    <!-- Less -->
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-        <footer>
-            <h3>Stay Connected</h3>
-        </footer>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+  </body>
 </html>
