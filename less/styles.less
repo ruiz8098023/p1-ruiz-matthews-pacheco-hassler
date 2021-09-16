@@ -224,57 +224,76 @@ h1, .desktop-nav, .banner-heading {
 
  //////////////////// FOOTER ////////////////////
 
-  footer {
+footer {
       background-color: @font-background-color;
 
     .centering-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 30px 0;
     }
 
-    .flex-container {
+    .footer-flex-container {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
+    }
 
-      .social-media {
+    .social-media {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-      a {
+    a {
         color: @primary-white;
         font-size: 50px;
-      }
+    }
 
-      p {
+    p {
         color: @primary-white;
         font-weight: bold;
         margin: 0;
-        padding-left: 20px;
-      }
+    }
 
-      .blue {
+    img {
+        width: 60%;
+    }
+
+    .blue {
         color: @primary-blue;
-      }
+        padding-left: 20px;
+    }
 
-      .red {
+    .red {
         color: @primary-red;
-      }
+        padding-left: 20px;
+    }
 
-      .yellow {
+    .yellow {
         color: @primary-yellow;
-      }
+        padding-left: 20px;
     }
     
+    
     .white-line {
-        width: 70%;
+        width: 275px;
         margin: auto;
         border-bottom: 3px solid @primary-white;
     }
-  }
+    
+    .address {
+        padding: 10px 0;
+    }
+
+    .footer-text {
+        padding: 10px 0;
+    }
+
+    padding: 0 10px 20px;
+
+}
   
   // Hamburger Menu Animation
   @keyframes fadeInRight {
