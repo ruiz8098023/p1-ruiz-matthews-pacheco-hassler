@@ -227,10 +227,22 @@ h1, .desktop-nav, .banner-heading {
   footer {
       background-color: @font-background-color;
 
-      // .social-media {
-      //   display: flex;
-      //   justify-content: center;
-      // }
+    .centering-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+      .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       a {
         color: @primary-white;
@@ -240,6 +252,8 @@ h1, .desktop-nav, .banner-heading {
       p {
         color: @primary-white;
         font-weight: bold;
+        margin: 0;
+        padding-left: 20px;
       }
 
       .blue {
@@ -253,7 +267,13 @@ h1, .desktop-nav, .banner-heading {
       .yellow {
         color: @primary-yellow;
       }
-      
+    }
+    
+    .white-line {
+        width: 70%;
+        margin: auto;
+        border-bottom: 3px solid @primary-white;
+    }
   }
   
   // Hamburger Menu Animation
