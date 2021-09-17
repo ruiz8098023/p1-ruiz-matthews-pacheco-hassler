@@ -212,16 +212,26 @@ h1, .desktop-nav, .banner-heading {
     border-bottom: @border;
   }
 
-  figure img {
-    border: @border;
+
+  figure {
+    position: relative;
+
+    img {
+      border: @border;
+      display: block;
+      margin: 0 auto;
+    }
+    
+
+    figcaption {
+      #figcaptions();
+  
+      .figcaption-black {
+        font-weight: bold;
+      }
   }
   
-  figcaption {
-    #figcaptions();
-
-    .figcaption-black {
-      font-weight: bold;
-    }
+  
   }
 
  //////////////////// ABOUT PAGE ////////////////////
@@ -242,6 +252,14 @@ h1, .desktop-nav, .banner-heading {
  
  .card {
    border: @border;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   height: 500px;
+
+   button:hover {
+     background-color: @button-background-color-hover; 
+   }
  }
 
  .feature-card-text {
@@ -329,6 +347,17 @@ footer {
     padding: 0 10px 20px;
 
 }
+
+//////////////////// MEDIA QUERIES ///////////////////
+
+//Figcaption Media Queries
+
+//Start Figcaption 388 Min Width Media Query
+// @media(min-width: 386px) {
+//   figure {
+//     right: 3px;
+//   }
+// }
 
 // Start Footer 768 Min Width Media Query
 @media (min-width: 768px) {
