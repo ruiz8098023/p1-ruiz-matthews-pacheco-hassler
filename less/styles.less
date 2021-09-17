@@ -320,6 +320,28 @@ footer {
     padding: 0 10px 20px;
 
 }
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    footer .white-line {
+        width: 0;
+        height: 275px;
+        border-bottom: none;
+        border-right: 3px solid @primary-white;
+        margin: auto 70px;
+    }
+}
   
   // Hamburger Menu Animation
   @keyframes fadeInRight {
