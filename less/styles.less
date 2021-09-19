@@ -466,6 +466,42 @@ footer {
 
 // Start Banner Section 1200 Min Width Media Query
 @media (min-width: 1200px) {
+  .site-header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3%;
+  } 
+
+  // Mobile Nav
+  .button_container {
+    display: none;
+  }
+
+  //Desktop Nav  
+  .desktop-nav {
+    display: block;
+
+    ul li  {
+      #desktop-nav();
+      display: inline-block;
+      list-style-type: none;
+      text-transform: uppercase;
+      padding: 60px;
+      margin: 10px;
+      
+
+      a {
+        text-decoration: none;
+        color: @font-background-color;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+  }
+
   .banner {
     margin-top: -277px;
   }
@@ -496,17 +532,35 @@ footer {
       width: 40%;
     }
   }
+
 }
 // End Banner Section 1300 Min Width Media Query
+
+// Start Banner Section 1350 Min Width Media Query
+@media (min-width: 1350px) {
+  .desktop-nav {
+
+    ul li  {
+      margin: 30px;
+    }
+  
+  }
+}
+// End Banner Section 1300 Min Width Media Query
+
 
 // Start Banner Section 1500 Min Width Media Query
 @media (min-width: 1500px) {
   .about-text {
     margin-left: 40px;
   }
+
+  .site-header img {
+    width: 300px;
+  }
 }
 
-// End Banner Section 1700 Min Width Media Query
+// End Banner Section 1500 Min Width Media Query
 
 // Start Banner Section 1700 Min Width Media Query
 @media (min-width: 1700px) {

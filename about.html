@@ -29,18 +29,30 @@
   </head>
 
   <body>
-    <header>
-        <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250></a>
+    <header class="site-header">
+        <div class="wrapper site-header_wrapper">
+            <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250></a>
 
-        <!-- Mobile Nav -->
-        <div class="button_container" id="toggle">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-        </div>
+            <!-- Mobile Nav -->
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
 
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="badges.html">Badges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="badges.html">Badges</a></li>
@@ -49,16 +61,6 @@
                 </ul>
             </nav>
         </div>
-
-        <!-- Desktop Nav -->
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="badges.html">Badges</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="merch.html">Merch</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -81,13 +83,14 @@
         <section>
             <h2>Show Features</h2>
 
+            <!-- Bootstrap Cards -->
             <div class="container fluid">
                 <div class="row">
 
                     <!-- After Dark Card-->
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="images/after-dark-image.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="images/after-dark-image.jpg" alt="Photo of a gaming lounge">
                             <div class="card-body feature-card-text">
                             <h3 class="card-title">After Dark</h3>
                             <p class="card-text">Whether you want to sing your heart out at our late-night karaoke or just play some games and grab a drink with friends, the party doesn’t stop after dark.</p>
