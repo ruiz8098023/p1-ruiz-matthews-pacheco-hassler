@@ -212,27 +212,58 @@ h1, .desktop-nav, .banner-heading {
     border-bottom: @border;
   }
 
-
-  figure {
+  .banner-items {
     position: relative;
+    text-align: center;
 
-    img {
-      border: @border;
-      display: block;
-      margin: 0 auto;
+    button:hover, button a:hover {
+      background-color: @button-background-color-hover;
+      color: #fff;
     }
+  }
+
+  .banner-icons {
+    // color: #fff;
+    display: flex;
+    justify-content: center;
     
 
-    figcaption {
-      #figcaptions();
+    p {
+      font-family: @body-font;
+      padding-left: 6px;
+    }
+
+  }
+
+  .container-fluid {
+    padding: 40px;
+  }
+
+  .special-guest-image {
+
+    figure {
+      position: relative;
   
-      .figcaption-black {
-        font-weight: bold;
+      img {
+        border: @border;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
       }
-  }
+      
   
-  
+      figcaption {
+        #figcaptions();
+    
+        .figcaption-black {
+          font-weight: bold;
+        }
+    }   
+    
+    }
   }
+
+  
 
  //////////////////// ABOUT PAGE ////////////////////
  .about {  
