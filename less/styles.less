@@ -310,19 +310,27 @@ h1, .desktop-nav, .banner-heading {
 main {
   section {
 
-    .merch {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      padding: 5%;
+    .merch-gallery {
+
+      .merch {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+      }
     }
 
-    // .guest-merch {
-    //   text-align: center;
-    //   display: flex;
-    //   flex-direction: column;
-    //   padding: 10%;
-    // }
+    .guest-merch-gallery {
+
+      .merch {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+      }
+    }
+    
 
     .merch-button {
       background-color: @font-background-color;
@@ -440,9 +448,9 @@ footer {
     flex-wrap: wrap;
 
     .merch {
-      width: 32%;
+      width: 33%;
     }
-  }
+  }     
 
   .guest-merch-gallery {
     display: flex;
@@ -451,6 +459,11 @@ footer {
 
     .merch {
       width: 50%;
+      text-align: center;
+
+      img {
+        max-width: 70%;
+      }
     }
   }
 
