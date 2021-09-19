@@ -55,6 +55,7 @@ header {
     background-color: @primary-red;
     border-bottom: @border;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 h1, .desktop-nav, .banner-heading {
@@ -130,6 +131,7 @@ h1, .desktop-nav, .banner-heading {
       opacity: .9;
       visibility: visible;
       height: 100%;
+      z-index: 1;
       
       li {
         animation: fadeInRight .5s ease forwards;
@@ -205,19 +207,92 @@ h1, .desktop-nav, .banner-heading {
   // End Hamburger Menu // 
 
   //////////////////// HOME PAGE ////////////////////
-  figure img {
-    border: @border;
+  .carousel-inner img {
+    border-top: @border;
+    border-bottom: @border;
   }
-  
-  figcaption {
-    #figcaptions();
 
-    .figcaption-black {
-      font-weight: bold;
+  .banner-items {
+    position: relative;
+    text-align: center;
+
+    button:hover, button a:hover {
+      background-color: @button-background-color-hover;
+      color: #fff;
     }
   }
 
+  .banner-icons {
+    // color: #fff;
+    display: flex;
+    justify-content: center;
+    
+
+    p {
+      font-family: @body-font;
+      padding-left: 6px;
+    }
+
+  }
+
+  .container-fluid {
+    padding: 40px;
+  }
+
+  .special-guest-image {
+
+    figure {
+      position: relative;
+  
+      img {
+        border: @border;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+      
+  
+      figcaption {
+        #figcaptions();
+    
+        .figcaption-black {
+          font-weight: bold;
+        }
+    }   
+    
+    }
+  }
+
+  
+
  //////////////////// ABOUT PAGE ////////////////////
+ .about {  
+     text-align: center;
+     
+     img {
+       border: @border;
+       margin-bottom: 20px;
+     }
+
+     p {
+       text-align: left;
+       margin: 16px;
+     }
+  
+ }
+ 
+ .card {
+   border: @border;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   height: 500px;
+
+   button:hover {
+     background-color: @button-background-color-hover; 
+   }
+ }
+
  .feature-card-text {
    #feature-card-text();
  }
@@ -251,14 +326,23 @@ footer {
         font-size: 50px;
     }
 
+    a:hover {
+        color: @primary-white;
+    }
+
     p {
         color: @primary-white;
         font-weight: bold;
         margin: 0;
     }
 
-    img {
+    .mobile-footer-logo {
         width: 60%;
+        max-width: 176px;
+    }
+
+    .desktop-footer-logo {
+        display: none;
     }
 
     .blue {
@@ -294,6 +378,48 @@ footer {
     padding: 0 10px 20px;
 
 }
+
+//////////////////// MEDIA QUERIES ///////////////////
+
+// Start Footer 768 Min Width Media Query
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .footer-container {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            max-width: 1000px;
+        }
+
+        .white-line {
+            width: 0;
+            height: 275px;
+            border-bottom: none;
+            border-right: 3px solid @primary-white;
+            margin: auto 70px;
+        }
+
+        .mobile-footer-logo {
+            display: none;
+        }
+
+        .desktop-footer-logo {
+            width: 80%;
+            max-width: 250px;
+            display: inline-block;
+        }
+        
+        .centering-container {
+            flex: 1;
+        }
+    }
+}
+// End Footer 768 Min Width Media Query
   
   // Hamburger Menu Animation
   @keyframes fadeInRight {
@@ -307,7 +433,7 @@ footer {
     }
   }
 
-// Badges Page
+////////// BADGES PAGE ///////////
 .badges {
     .container{
         .row {
