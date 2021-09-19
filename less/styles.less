@@ -310,17 +310,27 @@ h1, .desktop-nav, .banner-heading {
 main {
   section {
 
-    div {
+    .merch {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 10%;
+    }
+
+    .guest-merch {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 10%;
     }
 
     .merch-button {
       background-color: @font-background-color;
       color: #fff;
-      padding: 10px;
+      margin: 30px 0;
+      padding: 15px 0;
       text-decoration: none;
       text-transform: uppercase;
-      width: 20%;
     }
 
     .merch-button a {
@@ -331,7 +341,6 @@ main {
 
     img {
       width: 100%;
-      max-width: 200px;
     }
   }
 }
