@@ -285,9 +285,10 @@ h1, .desktop-nav, .banner-heading {
        margin-bottom: 20px;
      }
 
-     p {
+     .about-text {
+       display: inline-block;
        text-align: left;
-       margin: 16px;
+       margin: 20px;
      }
   
  }
@@ -462,7 +463,7 @@ footer {
 }
 // End Banner Section 900 Min Width Media Query
 
-// Start Banner Section 1300 Min Width Media Query
+// Start Banner Section 1200 Min Width Media Query
 @media (min-width: 1200px) {
   .banner {
     margin-top: -277px;
@@ -478,8 +479,33 @@ footer {
   .banner-icons {
     font-size: 70px;
   }
+
+}
+// End Banner Section 1200 Min Width Media Query
+
+// Start Banner Section 1300 Min Width Media Query
+@media (min-width: 1300px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+
+    img {
+      width: 40%;
+    }
+  }
 }
 // End Banner Section 1300 Min Width Media Query
+
+// Start Banner Section 1500 Min Width Media Query
+@media (min-width: 1500px) {
+  .about-text {
+    margin-left: 40px;
+  }
+}
+
+// End Banner Section 1700 Min Width Media Query
 
 // Start Banner Section 1700 Min Width Media Query
 @media (min-width: 1700px) {
