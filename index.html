@@ -1,13 +1,45 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <title>Florida Supercon</title>
-        <meta charset="utf-8"/>
-    </head>
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Florida Supercon</title>
+       
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-        <header>
-            <nav>
+    <!-- LESS CSS -->
+    <link rel="stylesheet/less" type="text/css" href="./less/styles.less" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mya1fmm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <meta name="description" content="">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4308417424.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=200></a>
+
+        <!-- Mobile Nav -->
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="badges.html">Badges</a></li>
@@ -15,12 +47,213 @@
                     <li><a href="merch.html">Merch</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
 
-        <main></main>
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer>
-            <h3>Stay Connected</h3>
-        </footer>
-    </body>
+    <main>
+        <h1>Florida Supercon</h1>
+
+        <section>
+            <h2 class="banner-heading">Banner Section</h2>
+
+            <!-- Bootstrap Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Images -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/carousel-image1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel-image2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel-image3.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel-image4.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel-image5.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+ 
+            <div class="banner-items">
+                <div class="banner-icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>September 10-12, 2021</p>
+                </div>
+
+                <div class="banner-icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Miami Beach</p>
+                </div>
+
+                <button><a href="badges.html">Buy Badges</a></button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Special Guests</h2>
+
+            <!---------- Special Guests ---------->
+
+            <div class="container-fluid special-guest">
+                <div class="row">
+  
+                    <!-- Simu Liu -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/simu.jpg" alt="Photo of Simu Liu" title="Simu Liu">
+                            <figcaption>Simu <span class="figcaption-black">Liu</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Jodie Whitaker -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/jodie.jpg" alt="Photo of Jode Whitaker" title="Jodie Whitaker">
+                            <figcaption>Jodie <span class="figcaption-black">Whitaker</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Brian Tyree Henry -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/brian.jpg" alt="Photo of Brian Tyree Henry" title="Brian Tyree Henry">
+                            <figcaption>Brian <span class="figcaption-black">Tyree Henry</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Tatiana Maslaney -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/tatiana.jpg" alt="Photo of Tatiana Maslaney" title="Tatiana Maslaney">
+                            <figcaption>Tatiana <span class="figcaption-black">Maslaney</span></figcaption>
+                        </figure>
+                    </div>
+                
+                    <!-- N.K Jemisin -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/nk.jpg" alt="Photo of N.K. Jemisin" title="N.K. Jemisin">
+                            <figcaption>N.K. <span class="figcaption-black">Jemisin</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Justin Briner -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/justin.jpg" alt="Photo of Justin Briner" title="Justin Briner">
+                            <figcaption>Justin <span class="figcaption-black">Briner</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Makoto Shinkai -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/makoto.jpg" alt="Photo of Makoto Shinkai" title="Makoto Shinkai">
+                            <figcaption>Makoto <span class="figcaption-black">Shinkai</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Chloe Zhao -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 special-guest-image">
+                        <figure>
+                            <img src="images/chloe.jpg" alt="Photo of Chloé Zhao" title="Chloé Zhao">
+                            <figcaption>Chloé <span class="figcaption-black">Zhao</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="centering-container">
+            <div class="footer-flex-container">
+                <!-- Facebook -->
+                <div class="social-media">                   
+                    <a href="https://www.facebook.com/floridasupercon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <p class="blue">Join our community</p>
+                </div>
+
+                <!-- Instagram -->
+                <div class="social-media">                   
+                    <a href="https://www.instagram.com/floridasupercon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <p class="red">Tag us in your photos</p>
+                </div>
+
+                <!-- Twitter -->
+                <div class="social-media">
+                    <a href="https://twitter.com/FloridaSupercon" target="_blank"><i class="fab fa-twitter-square"></i></a>  
+                    <p class="yellow">Talk geeky with us</p>
+                </div>
+            </div>
+        </div>
+     
+        <div class="white-line"></div>
+        <div class="centering-container">
+            <div>
+                <img src="images/small-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=250>
+                <div class="address">
+                    <p >1901 Convention Center Dr</p>
+                    <p >Miami Beach, FL 33139</p>
+                </div>
+
+                <p class="footer-text">(954) 399-1330</p>
+
+                <p class="footer-text">inquiry.flsupercon@reedpop.com</p>
+
+                <p class="footer-text">Copyright 2021.</p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+    
+    <!-- Less -->
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+  </body>
 </html>

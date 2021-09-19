@@ -2,12 +2,55 @@
 <html lang="en">
     <head>
         <title>Florida Supercon</title>
-        <meta charset="utf-8"/>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- LESS CSS -->
+        <link rel="stylesheet/less" type="text/css" href="./less/styles.less" />
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/oty1zax.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+        <meta name="description" content="">
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/4308417424.js" crossorigin="anonymous"></script>
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
         <header>
-            <nav>
+            <a href="index.html"><img src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo" width=200></a>
+    
+            <!-- Mobile Nav -->
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+    
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="badges.html">Badges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="about.html">About</a></li>
                     <li><a href="badges.html">Badges</a></li>
@@ -15,12 +58,248 @@
                     <li><a href="merch.html">Merch</a></li>
                 </ul>
             </nav>
-        </header>
+        </header>    
 
-        <main></main>
+        <main class="badges">
+            <section class="badges-top-section">
+                <div class="left-blue-div"></div>
+                <div class="middle-yellow-div">
+                    <h2>Premium Packages</h2>
+                </div>
+                <div class="right-blue-div"></div>
+                <div class="red-div"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-fanatic.jpg" alt="Two convention attendees in costume" title="Two convention attendees in costume">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">The Fanatic</h5>
+                                        <h6 class="card-subtitle mb-2">$245</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Friday, Saturday and Sunday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                    
+                                    <button type="button" class="btn badges-button">
+                                        Buy Badges</a>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-superstar.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">The Superstar</h5>
+                                        <h6 class="card-subtitle mb-2">$295</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Friday, Saturday and Sunday during Florida Supercon 2021 with Private Celebrity Premium Lounge Access.
+                                        </p>
+                                    </div>
+
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-family-plan.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">The Family Plan</h5>
+                                        <h6 class="card-subtitle mb-2">$295</h6>
+                                        <p class="card-text">This package is valid for six (6) people on Friday, Saturday and Sunday during Florida Supercon 2021 - Two (2) Adult badges and up to four (4) kids badges.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                              </div>
+                        </div>
+                          
+                    </div>
+                </div>
+        
+
+            </section>
+
+            <section class="badges-bottom-section">
+                <div class="left-blue-div"></div>
+                <div class="middle-yellow-div">
+                    <h2>General Admission</h2>
+                </div>
+                <div class="right-blue-div"></div>
+                <div class="red-div"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-3day-adult.jpg" alt="Two convention attendees in costume" title="Two convention attendees in costume">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">3-day Adult Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$90</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Friday, Saturday and Sunday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-3day-kids.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">3-day Kids Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$20</h6>
+                                        <p class="card-text">This badge is valid for one (1) Child Ages 6-12 on Friday, Saturday and Sunday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-friday.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Friday Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$42</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Friday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-saturday.jpg" alt="Two convention attendees in costume" title="Two convention attendees in costume">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Saturday Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$50</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Saturday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-sunday.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Sunday Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$46</h6>
+                                        <p class="card-text">This badge is valid for one (1) person on Sunday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container align-self-center col-md-6 col-lg-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="images/badges-sunday-kids.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Sunday Kids Badge</h5>
+                                        <h6 class="card-subtitle mb-2">$42</h6>
+                                        <p class="card-text">This badge is valid for one (1) Child Ages 6-12 on Sunday during Florida Supercon 2021.
+                                        </p>
+                                    </div>
+                                  
+                                    <button type="button" class="btn badges-button">Buy Badges</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="left-blue-div"></div>
+                <div class="middle-yellow-div"></div>
+                <div class="right-blue-div"></div>
+                <div class="red-div"></div>
+            </section>
+        </main>
 
         <footer>
-            <h3>Stay Connected</h3>
+            <div class="footer-container">
+                <div class="centering-container">
+                    <div class="footer-flex-container">
+                        <!-- Facebook -->
+                        <div class="social-media">                   
+                            <a href="https://www.facebook.com/floridasupercon" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            <p class="blue">Join our community</p>
+                        </div>
+    
+                        <!-- Instagram -->
+                        <div class="social-media">                   
+                            <a href="https://www.instagram.com/floridasupercon/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                            <p class="red">Tag us in your photos</p>
+                        </div>
+    
+                        <!-- Twitter -->
+                        <div class="social-media">
+                            <a href="https://twitter.com/FloridaSupercon" target="_blank"><i class="fab fa-twitter-square"></i></a>  
+                            <p class="yellow">Talk geeky with us</p>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="white-line"></div>
+                <div class="centering-container">
+                    <div class="footer-info">
+                        <img class="mobile-footer-logo" src="images/small-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo">
+                        <img class="desktop-footer-logo" src="images/full-logo.png" alt="Florida Supercon Logo" title="Florida Supercon Logo">
+
+                        <div class="address">
+                            <p >1901 Convention Center Dr</p>
+                            <p >Miami Beach, FL 33139</p>
+                        </div>
+        
+                        <p class="footer-text">(954) 399-1330</p>
+        
+                        <p class="footer-text">inquiry.flsupercon@reedpop.com</p>
+        
+                        <p class="footer-text">Copyright 2021.</p>
+                    </div>
+                </div>           
+            </div>
         </footer>
+
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+    
+        <!-- Less -->
+        <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     </body>
 </html>
