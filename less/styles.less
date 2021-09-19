@@ -135,7 +135,7 @@ h1, .desktop-nav, .banner-heading {
       opacity: .9;
       visibility: visible;
       height: 100%;
-      z-index: 1;
+      z-index: 2;
       
       li {
         animation: fadeInRight .5s ease forwards;
@@ -211,14 +211,23 @@ h1, .desktop-nav, .banner-heading {
   // End Hamburger Menu // 
 
   //////////////////// HOME PAGE ////////////////////
+  .banner {
+    margin-top: -136px;
+  }
+
   .carousel-inner img {
     border-top: @border;
     border-bottom: @border;
+    object-fit: cover;
+    min-height: 400px;
   }
 
   .banner-items {
     position: relative;
     text-align: center;
+    top: 264px;
+    z-index: 1;
+
 
     button:hover, button a:hover {
       background-color: @button-background-color-hover;
@@ -227,9 +236,15 @@ h1, .desktop-nav, .banner-heading {
   }
 
   .banner-icons {
-    // color: #fff;
+    color: #fff;
     display: flex;
     justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+
+    i.fas.fa-calendar-alt {
+      margin-top: 5px;
+    }
     
 
     p {
@@ -237,10 +252,6 @@ h1, .desktop-nav, .banner-heading {
       padding-left: 6px;
     }
 
-  }
-
-  .container-fluid {
-    padding: 40px;
   }
 
   .special-guest-image {
@@ -278,9 +289,10 @@ h1, .desktop-nav, .banner-heading {
        margin-bottom: 20px;
      }
 
-     p {
+     .about-text {
+       display: inline-block;
        text-align: left;
-       margin: 16px;
+       margin: 20px;
      }
   
  }
@@ -466,6 +478,14 @@ footer {
   }
 
 }
+// Start Banner Section 500 Min Width Media Query
+@media (min-width: 500px) {
+  .banner-icons {
+    font-size: 30px;
+  }
+}
+// End Banner Section 500 Min Width Media Query
+
 
 // Start Footer 768 Min Width Media Query
 @media (min-width: 768px) {
@@ -506,6 +526,98 @@ footer {
     }
 }
 // End Footer 768 Min Width Media Query
+
+// Start Banner Section 900 Min Width Media Query
+@media (min-width: 900px) {
+  .banner {
+    margin-top: -206px;
+  }
+
+  .banner-items {
+    text-align: right;
+    margin-right: 40px;
+  }
+
+  .banner-icons {
+    justify-content: flex-end;
+    font-size: 50px;
+
+    p {
+      padding-left: 14px;
+    }
+  }
+}
+// End Banner Section 900 Min Width Media Query
+
+// Start Banner Section 1200 Min Width Media Query
+@media (min-width: 1200px) {
+  .banner {
+    margin-top: -277px;
+  }
+
+  .banner-items {
+    top: 340px;
+
+    button {
+      font-size: 20px;
+    }
+  }
+  .banner-icons {
+    font-size: 70px;
+  }
+
+}
+// End Banner Section 1200 Min Width Media Query
+
+// Start Banner Section 1300 Min Width Media Query
+@media (min-width: 1300px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+
+    img {
+      width: 40%;
+    }
+  }
+}
+// End Banner Section 1300 Min Width Media Query
+
+// Start Banner Section 1500 Min Width Media Query
+@media (min-width: 1500px) {
+  .about-text {
+    margin-left: 40px;
+  }
+}
+
+// End Banner Section 1700 Min Width Media Query
+
+// Start Banner Section 1700 Min Width Media Query
+@media (min-width: 1700px) {
+  .banner {
+    margin-top: -357px;
+  }
+
+  .banner-items {
+    top: 500px;
+
+    button {
+      font-size: 30px;
+    }
+
+    .banner-icons {
+      font-size: 100px;
+
+      i.fas.fa-calendar-alt {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+// End Banner Section 1700 Min Width Media Query
+
+//////////////////// END MEDIA QUERIES ///////////////////
   
   // Hamburger Menu Animation
   @keyframes fadeInRight {
@@ -574,13 +686,26 @@ footer {
 
   }
   .container-fluid{
-     
+    margin-bottom: 5%;
+    width:100%;
       .container{
+        .row{
+          display: flex;
+          justify-content: space-around;
+        .col{
+          background-color: @primary-blue;
+          max-width: 600px;
+          max-height: 150px;
+        }
+      }
           h2{
               font-family: 'classic-comic', sans-serif;
               font-weight: 400;
               font-style: normal;
               font-size: 30px;
+              display: flex;
+              align-items: center;
+              text-align: end;
           }
           
              
