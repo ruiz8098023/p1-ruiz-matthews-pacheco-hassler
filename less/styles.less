@@ -215,6 +215,11 @@ h1, .desktop-nav, .banner-heading {
   .banner-items {
     position: relative;
     text-align: center;
+
+    button:hover, button a:hover {
+      background-color: @button-background-color-hover;
+      color: #fff;
+    }
   }
 
   .banner-icons {
@@ -230,27 +235,35 @@ h1, .desktop-nav, .banner-heading {
 
   }
 
-  figure {
+  .container-fluid {
+    padding: 40px;
+  }
 
-    position: relative;
+  .special-guest-image {
 
-    img {
-      border: @border;
-      display: block;
-      margin: 0 auto;
-    }
-    
-
-    figcaption {
-      #figcaptions();
+    figure {
+      position: relative;
   
-      .figcaption-black {
-        font-weight: bold;
+      img {
+        border: @border;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
       }
-  }
+      
   
-  
+      figcaption {
+        #figcaptions();
+    
+        .figcaption-black {
+          font-weight: bold;
+        }
+    }   
+    
+    }
   }
+
+  
 
  //////////////////// ABOUT PAGE ////////////////////
  .about {  
