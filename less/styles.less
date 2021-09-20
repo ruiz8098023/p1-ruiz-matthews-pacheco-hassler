@@ -33,6 +33,10 @@ body {
       #heading-background();
     }
 
+    h3 {
+      color: white;
+    }
+
     img {
         max-width: 100%;
     }
@@ -327,10 +331,66 @@ h1, .desktop-nav, .banner-heading {
    #feature-card-text();
  }
 
+
+
+
+
+  //////////////////// MERCH PAGE ////////////////////
+
+main {
+  section {
+
+    .merch-gallery {
+
+      .merch {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+      }
+    }
+
+    .guest-merch-gallery {
+
+      .merch {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+      }
+    }
+    
+
+    .merch-button {
+      background-color: @font-background-color;
+      color: #fff;
+      margin-bottom: 30px;
+      padding: 15px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      a {
+        background-color: @font-background-color;
+        font-family: @comic-font;
+      }
+    }
+
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
  //////////////////// FOOTER ////////////////////
 
 footer {
-      background-color: @font-background-color;
+    margin-top: 20px;
+    background-color: @font-background-color;
 
     .centering-container {
         display: flex;
@@ -411,6 +471,32 @@ footer {
 
 //////////////////// MEDIA QUERIES ///////////////////
 
+// Query for merch page
+@media (min-width: 620px) {
+  .merch-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5%;
+
+    .merch {
+      width: 33%;
+    }
+  }     
+
+  .guest-merch-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+
+    .merch {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+}
 // Start Banner Section 500 Min Width Media Query
 @media (min-width: 500px) {
   .banner-icons {
@@ -420,8 +506,9 @@ footer {
 // End Banner Section 500 Min Width Media Query
 
 
-// Start Footer 768 Min Width Media Query
+
 @media (min-width: 768px) {
+    // Start Footer 768 Min Width Media Query
     footer {
         display: flex;
         align-items: center;
@@ -457,10 +544,40 @@ footer {
             flex: 1;
         }
     }
-}
 // End Footer 768 Min Width Media Query
 
+<<<<<<< HEAD
 // Start 900 Min Width Media Query
+=======
+// Start Heading Decoration 768 Min Width Media Query
+    .badges{
+        .heading-decoration {
+            .row {
+                .left-blue-div {
+                    display: inline-block;
+                    background-color: @primary-blue;
+                    border-top: @border; 
+                    border-bottom: @border;
+                    border-right: @border;
+                    margin-right: 20px;
+                }
+    
+                .right-blue-div {
+                    display: inline-block;
+                    background-color: @primary-blue;
+                    border-top: @border; 
+                    border-bottom: @border;
+                    border-left: @border;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+// End Heading Decoration 768 Min Width Media Query
+}
+
+// Start Banner Section 900 Min Width Media Query
+>>>>>>> 82508d29164e29c9b89a7add133c863b1374d59a
 @media (min-width: 900px) {
   .banner {
     margin-top: -206px;
@@ -559,7 +676,6 @@ footer {
   }
 }
 
-
 // End 1500 Min Width Media Query
 
 // Start 1700 Min Width Media Query
@@ -601,7 +717,57 @@ footer {
   }
 
 ////////// BADGES PAGE ///////////
+
+
 .badges {
+    // .heading-decoration-desktop {
+    //     display: none;
+    // }
+
+    .heading-decoration {
+        .left-blue-div {
+            display: none;
+        }
+
+        .right-blue-div {
+            display: none;
+        }
+
+        .middle-yellow-div {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            background-color: @primary-yellow;
+            border-top: @border; 
+            border-bottom: @border;
+            border-right: @border;
+            border-left: @border;
+        }
+
+        .red-div {
+            margin: 20px 0;
+            height: 30px;
+            background-color: @primary-red;
+            border-top: @border; 
+            border-bottom: @border;
+        }
+
+        .heading-div {
+            height: 140px;
+            h6 {
+                font-family: @comic-font;
+                font-size: 1.5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            img {
+                max-width: 370px;
+            }
+        }
+    }
+
     .container{
         .row {
             padding: 0 10px;
@@ -644,13 +810,13 @@ footer {
       font-size: 16px;
       font-weight: 400;
       nav{
-          ul{
-            li{
-              a{
-                display: inline;
-              }
+        ul{
+                li{
+                    a{
+                        display: inline;
+                    }
+                }
             }
-          }
       }
 
   }
