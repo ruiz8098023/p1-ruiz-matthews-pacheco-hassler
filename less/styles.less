@@ -1,3 +1,4 @@
+
 @import "./variables.less";
 @import "./mixins.less";
 
@@ -29,9 +30,6 @@ body {
         #heading();
     }
 
-    h2 {
-      #heading-background();
-    }
 
     h3 {
       color: white;
@@ -563,6 +561,14 @@ footer {
 
 
 @media (min-width: 768px) {
+    // Start Container 768 Min Media Query
+    .badges {
+      .container {
+        padding: 100px 0;
+      }
+    }
+    // End Container 768 Min Media Query
+
     // Start Footer 768 Min Width Media Query
     footer {
         display: flex;
@@ -774,42 +780,45 @@ footer {
   }
 
 ////////// BADGES PAGE ///////////
-
-    .container{
-        .row {
-            padding: 0 10px;
-            .card-container {
-                padding: 20px 3%;
-                .card {
-                    .card-styling();
-                    img {
-                        width: 100%;
+.badges {
+  .container {
+    padding: 50px 0;
+    .row {
+        padding: 0 10px;
+        .card-container {
+            padding: 20px 3%;
+            .card {
+                .card-styling();
+                img {
+                    width: 100%;
+                }
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h5 {
+                        .card-heading();
                     }
-                    .card-body {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        h5 {
-                            .card-heading();
-                        }
-                        h6 {
-                            .card-subheading();
-                        }
-                        p {
-                            .card-body-text();
-                        }
-                        .badges-button {
-                            .card-button();
-                        }
-                        .badges-button:hover {
-                            background-color: @button-background-color-hover;
-                        }
+                    h6 {
+                        .card-subheading();
+                    }
+                    p {
+                        .card-body-text();
+                    }
+                    .badges-button {
+                        .card-button();
+                    }
+                    .badges-button:hover {
+                        background-color: @button-background-color-hover;
                     }
                 }
             }
         }
     }
+  }
+  }
 }
+    
  //////////////////// Contact PAGE ////////////////////
  body{
   header{
