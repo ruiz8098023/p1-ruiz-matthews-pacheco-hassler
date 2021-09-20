@@ -3,6 +3,7 @@
 2. Challeging to align items responsively in the footer.
 3. Parse error occurred that took a few days to fix.
 4. Positioning figcaptions to the bottom-right of images.
+5. Bootstrap carousel indicators not showing.
 
 ## Resources 
 ### General CSS
