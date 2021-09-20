@@ -290,9 +290,8 @@ h1, .desktop-nav, .banner-heading {
      }
 
      .about-text {
-       display: inline-block;
        text-align: left;
-       margin: 20px;
+       margin: 50px;
      }
   
  }
@@ -302,7 +301,22 @@ h1, .desktop-nav, .banner-heading {
    text-align: center;
    margin: 0 auto;
    margin-bottom: 40px;
-   height: 500px;
+   height: 615px;
+
+   .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .feature-card-text {
+    padding: 33px;
+  }
+
+   button {   
+    padding: 15px 30px;
+    margin: 30px auto 50px;
+   }
 
    button:hover {
      background-color: @button-background-color-hover; 
@@ -446,7 +460,7 @@ footer {
 }
 // End Footer 768 Min Width Media Query
 
-// Start Banner Section 900 Min Width Media Query
+// Start 900 Min Width Media Query
 @media (min-width: 900px) {
   .banner {
     margin-top: -206px;
@@ -466,9 +480,9 @@ footer {
     }
   }
 }
-// End Banner Section 900 Min Width Media Query
+// End 900 Min Width Media Query
 
-// Start Banner Section 1200 Min Width Media Query
+// Start 1200 Min Width Media Query
 @media (min-width: 1200px) {
   .site-header_wrapper {
     display: flex;
@@ -521,26 +535,11 @@ footer {
     font-size: 70px;
   }
 
-}
-// End Banner Section 1200 Min Width Media Query
-
-// Start Banner Section 1300 Min Width Media Query
-@media (min-width: 1300px) {
-  .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
-
-    img {
-      width: 50%;
-    }
-  }
 
 }
-// End Banner Section 1300 Min Width Media Query
+// End 1200 Min Width Media Query
 
-// Start Banner Section 1350 Min Width Media Query
+// Start 1350 Min Width Media Query
 @media (min-width: 1350px) {
   .desktop-nav {
 
@@ -550,23 +549,20 @@ footer {
   
   }
 }
-// End Banner Section 1300 Min Width Media Query
+// End 1350 Min Width Media Query
 
 
-// Start Banner Section 1500 Min Width Media Query
+// Start 1500 Min Width Media Query
 @media (min-width: 1500px) {
-  .about-text {
-    margin-left: 40px;
-  }
-
   .site-header img {
     width: 300px;
   }
 }
 
-// End Banner Section 1500 Min Width Media Query
 
-// Start Banner Section 1700 Min Width Media Query
+// End 1500 Min Width Media Query
+
+// Start 1700 Min Width Media Query
 @media (min-width: 1700px) {
   .banner {
     margin-top: -357px;
@@ -588,7 +584,7 @@ footer {
     }
   }
 }
-// End Banner Section 1700 Min Width Media Query
+// End 1700 Min Width Media Query
 
 //////////////////// END MEDIA QUERIES ///////////////////
   
