@@ -52,6 +52,50 @@ body {
       padding: 16px;
     }
 
+
+    // Heading decoration
+    .heading-decoration {
+      .left-blue-div {
+          display: none;
+      }
+
+      .right-blue-div {
+          display: none;
+      }
+
+      .middle-yellow-div {
+          display: inline-block;
+          position: relative;
+          text-align: center;
+          background-color: @primary-yellow;
+          border-top: @border; 
+          border-bottom: @border;
+          border-right: @border;
+          border-left: @border;
+      }
+
+      .red-div {
+          margin: 20px 0;
+          height: 30px;
+          background-color: @primary-red;
+          border-top: @border; 
+          border-bottom: @border;
+      }
+
+      .heading-div {
+          height: 140px;
+          h6 {
+              font-family: @comic-font;
+              font-size: 1.5rem;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+          img {
+              max-width: 370px;
+          }
+      }
     
 }
 
@@ -555,7 +599,7 @@ footer {
 
 // Start 900 Min Width Media Query
 // Start Heading Decoration 768 Min Width Media Query
-    .badges{
+    
         .heading-decoration {
             .row {
                 .left-blue-div {
@@ -577,7 +621,7 @@ footer {
                 }
             }
         }
-    }
+
 // End Heading Decoration 768 Min Width Media Query
 }
 
@@ -721,56 +765,6 @@ footer {
   }
 
 ////////// BADGES PAGE ///////////
-
-
-.badges {
-    // .heading-decoration-desktop {
-    //     display: none;
-    // }
-
-    .heading-decoration {
-        .left-blue-div {
-            display: none;
-        }
-
-        .right-blue-div {
-            display: none;
-        }
-
-        .middle-yellow-div {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-            background-color: @primary-yellow;
-            border-top: @border; 
-            border-bottom: @border;
-            border-right: @border;
-            border-left: @border;
-        }
-
-        .red-div {
-            margin: 20px 0;
-            height: 30px;
-            background-color: @primary-red;
-            border-top: @border; 
-            border-bottom: @border;
-        }
-
-        .heading-div {
-            height: 140px;
-            h6 {
-                font-family: @comic-font;
-                font-size: 1.5rem;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            img {
-                max-width: 370px;
-            }
-        }
-    }
 
     .container{
         .row {
