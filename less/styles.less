@@ -547,7 +547,58 @@ footer {
   }
 
 ////////// BADGES PAGE ///////////
+
+
 .badges {
+    .left-blue-div {
+        background-color: @primary-blue;
+        border-top: @border; 
+        border-bottom: @border;
+        border-right: @border;
+        margin-right: 15px;
+    }
+
+    .right-blue-div {
+        background-color: @primary-blue;
+        border-top: @border; 
+        border-bottom: @border;
+        border-left: @border;
+        margin-left: 15px;
+    }
+
+    .middle-yellow-div {
+        position: relative;
+        text-align: center;
+        background-color: @primary-yellow;
+        border-top: @border; 
+        border-bottom: @border;
+        border-right: @border;
+        border-left: @border;
+      }
+
+    .red-div {
+        margin-top: 15px;
+        height: 30px;
+        background-color: @primary-red;
+        border-top: @border; 
+        border-bottom: @border;
+    }
+
+    .heading-div {
+        height: 140px;
+        display: inline-block;
+        h3 {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img {
+            max-width: 370px;
+        }
+    }
+
     .container{
         .row {
             padding: 0 10px;
@@ -590,13 +641,13 @@ footer {
       font-size: 16px;
       font-weight: 400;
       nav{
-          ul{
-            li{
-              a{
-                display: inline;
-              }
+        ul{
+                li{
+                    a{
+                        display: inline;
+                    }
+                }
             }
-          }
       }
 
   }
